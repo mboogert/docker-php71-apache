@@ -4,4 +4,5 @@ MAINTAINER Marcel Boogert <marcel@mtdb.nl>
 RUN \
     apt-get update && \
     apt-get install libz-dev -y && \
-    pecl install zlib zip
+    pecl install zlib zip && \
+    apt-get clean
