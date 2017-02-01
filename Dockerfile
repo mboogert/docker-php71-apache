@@ -2,8 +2,8 @@ FROM php:7.1-apache
 MAINTAINER Marcel Boogert <marcel@mtdb.nl>
 
 RUN \
-    a2enmod rewrite \
-    a2enmod expires \
+    a2enmod rewrite && \
+    a2enmod expires && \
     a2enmod headers
 
 RUN \
