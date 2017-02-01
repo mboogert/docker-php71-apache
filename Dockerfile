@@ -7,6 +7,7 @@ RUN \
     apt-get install libjpeg-dev -y && \
     apt-get install libpng-dev -y && \
     apt-get install libfreetype6-dev -y && \
+    apt-get install libmcrypt-dev -y &&
     apt-get clean
 
 RUN docker-php-ext-install \
