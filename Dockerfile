@@ -13,6 +13,7 @@ RUN \
     apt-get install libpng-dev -y && \
     apt-get install libfreetype6-dev -y && \
     apt-get install libmcrypt-dev -y && \
+    apt-get install libicu-dev -y && \
     apt-get clean
 
 RUN docker-php-ext-install \
@@ -21,4 +22,5 @@ RUN docker-php-ext-install \
     pdo \
     pdo_mysql \
     mcrypt \
+    intl \
     bcmath
